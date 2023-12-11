@@ -1,0 +1,143 @@
+$color_1: var(--light-color);
+$color_2: red;
+/* contact-map-part */
+.contact-map-form {
+    background: #f7f7fa;
+    .main-title {
+        h2 {
+            font-size: 52px;
+            padding-bottom: 0;
+        }
+        p {
+            font-size: 23px;
+        }
+    }
+    .contact-form-width {
+        margin: 0 auto;
+        max-width: 484px;
+    }
+}
+.contact-rules {
+    color: $color_1;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 12px;
+}
+.error-message {
+    color: $color_2;
+    font-size: 13px;
+    margin-top: 5px;
+}
+@media (min-width: 1200px) {
+    .contact-map-form {
+        .contact-form-width {
+            margin-top: 140px;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1559px) {
+    .contact-map-form {
+        .main-title {
+            h2 {
+                font-size: 38px;
+            }
+        }
+        .center-image {
+            img {
+                max-width: 396px;
+            }
+        }
+        .contact-form-width {
+            max-width: 350px;
+        }
+    }
+    .contact-input {
+        label {
+            font-size: 14px;
+        }
+    }
+    .contact-rules {
+        font-size: 12px;
+    }
+    .error-message {
+        margin-top: 3px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact-map-form {
+        .main-title {
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-map-form {
+        .main-title {
+            text-align: center !important;
+            align-items: center !important;
+            h2 {
+                font-size: 38px;
+            }
+        }
+        .contact-map-form-img {
+            max-width: 400px;
+        }
+        .col-xl-6 {
+            &:first-child {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+        }
+        .contact-form-width {
+            max-width: 400px;
+        }
+    }
+    .form-label-font {
+        font-size: 13.813px;
+    }
+    .contact-rules {
+        font-size: 12px;
+    }
+    .error-message {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .contact-map-form-img {
+        margin-bottom: 100px;
+    }
+    .contact-map-form {
+        .main-title {
+            justify-content: center;
+            align-items: center !important;
+            h2 {
+                text-align: center;
+                font-size: 30px;
+            }
+            p {
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        .contact-form-width {
+            max-width: 320px;
+        }
+    }
+    .center-image {
+        text-align: center;
+    }
+    .form-label-font {
+        font-size: 13px !important;
+    }
+    .error-message {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .contact-rules {
+        font-size: 12px;
+    }
+}

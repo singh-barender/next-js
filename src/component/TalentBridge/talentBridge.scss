@@ -1,0 +1,249 @@
+/* talent bridge */
+.talent-bridge-sec {
+    background: var(--primary-color);
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .talent-bridge-sec {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .career-content {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+/* data privacy section  */
+.data-privacy-sec {
+    background: var(--white-color);
+    .data-privacy-content {
+        img {
+            margin-bottom: 74px;
+        }
+        .main-title {
+            p {
+                font-size: 24px;
+                margin-bottom: 30px;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1559px) {
+    .data-privacy-sec {
+        .data-privacy-content {
+            .main-title {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .data-privacy-sec {
+        .data-privacy-content {
+            img {
+                margin-bottom: 40px;
+            }
+            .main-title {
+                h2 {
+                    max-width: 350px;
+                }
+                p {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .data-privacy-content {
+        .main-title {
+            p {
+                font-size: 15px;
+            }
+            margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .data-privacy-sec {
+        padding-bottom: 0px;
+        .data-privacy-content {
+            img {
+                max-width: 72px;
+                margin-bottom: 46px;
+            }
+            .main-title {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .data-privacy-content {
+        img {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/* download app */
+.download-app-sec {
+    background: #e5eef5;
+    position: relative;
+    .career-content {
+        h2 {
+            font-weight: 700;
+            font-size: 58px;
+            max-width: 100%;
+            span {
+                font-weight: 700;
+                font-size: 58px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+.download-app-svg {
+    position: absolute;
+}
+.download-app-img {
+    img {
+        position: relative;
+        background: #d9d9d9;
+        box-shadow:
+            0px 35.946px 54.795px 0px rgba(0, 0, 0, 0.15),
+            0px -5.699px 24.987px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+}
+.download-app-scan {
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -1.096px;
+        line-height: 1.5;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .download-app-img {
+        img {
+            min-width: 260px;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1559px) {
+    .download-app-sec {
+        .career-content {
+            h2 {
+                font-size: 42px;
+                span {
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+    .download-app-scan {
+        h4 {
+            font-size: 16px;
+        }
+        img {
+            max-width: 144px;
+        }
+    }
+    .download-scan {
+        img {
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .download-app-sec {
+        .career-content {
+            h2 {
+                font-size: 32px;
+                span {
+                    font-size: 32px;
+                }
+            }
+        }
+        .download-app-svg {
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+    .download-app-scan {
+        img {
+            max-width: 120px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+    .download-scan {
+        img {
+            width: 140px;
+            height: 140px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .download-app-sec {
+        .download-app-svg {
+            top: 0;
+            bottom: 0;
+            display: flex;
+            max-width: 300px;
+        }
+        .main-title {
+            p {
+                font-size: 15px;
+            }
+            .career-desc {
+                font-size: 15px;
+            }
+        }
+        .download-app-img {
+            img {
+                border-radius: 30px;
+            }
+        }
+
+        .career-content {
+            h2 {
+                font-size: 30px;
+                text-align: start;
+                span {
+                    font-size: 30px;
+                    text-align: start;
+                }
+            }
+            p {
+                text-align: start;
+            }
+            .download-app-scan {
+                flex-direction: column;
+                margin-top: 50px;
+                h4 {
+                    font-size: 14px;
+                    margin-bottom: 34px;
+                    margin-top: 36px;
+                }
+                img {
+                    max-width: 121.846px;
+                }
+                .download-scan-img {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+    }
+}

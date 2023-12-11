@@ -1,0 +1,98 @@
+/* career hub css */
+.career-content {
+    h2 {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 1.3;
+        border-bottom: 1.7px solid rgba(229, 238, 245, 0.9);
+        padding-bottom: 13px;
+        margin-bottom: 18px;
+        font-weight: 300;
+        max-width: 750px;
+        span {
+            font-size: 46.5px;
+            letter-spacing: -2px;
+            font-weight: 700;
+        }
+    }
+    p {
+        font-size: 25px;
+        margin-bottom: 5px;
+        line-height: 1.4;
+    }
+}
+.career-desc {
+    margin-bottom: 80px;
+}
+@media (min-width: 992px) {
+    .career-content.career-content-left {
+        padding-left: 70px;
+    }
+    .career-content.career-content-right {
+        padding-left: 0;
+        padding-right: 70px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1559px) {
+    .career-content {
+        h2 {
+            font-size: 30px;
+            span {
+                font-size: 34px;
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .career-desc {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .career-content {
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .career-content {
+        h2 {
+            font-size: 21px;
+            span {
+                font-size: 26px;
+            }
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .career-desc {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .career-content {
+        text-align: center;
+        h2 {
+            padding-bottom: 13px;
+            margin-bottom: 18px;
+            font-size: 18px;
+            letter-spacing: -0.9px;
+            span {
+                font-size: 23px;
+                font-weight: 700;
+            }
+        }
+        p {
+            font-size: 15px;
+            br {
+                display: none;
+            }
+        }
+    }
+    .career-desc {
+        margin-bottom: 0px;
+    }
+}
