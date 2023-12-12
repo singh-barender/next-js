@@ -1,13 +1,33 @@
 /* talent bridge */
 .talent-bridge-sec {
     background: var(--primary-color);
-    svg {
-        width: 100%;
-        height: auto;
+    .main-title{
+        h3{
+            letter-spacing: 1.122px;
+        }
+    }
+    .career-desc{
+        p{
+            max-width: 750px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .talent-bridge-sec {
+        .main-title{
+            h3{
+                letter-spacing:-0.878px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 767px) {
     .talent-bridge-sec {
+        .main-title{
+            h3{
+                letter-spacing:0.122px;
+            }
+        }
         .row {
             flex-direction: column-reverse;
         }
@@ -98,14 +118,17 @@
     position: relative;
     .career-content {
         h2 {
-            font-weight: 700;
+            font-weight: 800;
             font-size: 58px;
             max-width: 100%;
             span {
-                font-weight: 700;
+                font-weight: 800;
                 font-size: 58px;
                 max-width: 100%;
             }
+        }
+        .download-app-scan{
+            margin-right: 65px;
         }
     }
 }
@@ -135,6 +158,9 @@
         img {
             min-width: 260px;
         }
+    }
+    .download-app-scan {
+        margin-right: 65px;
     }
 }
 @media (min-width: 992px) and (max-width: 1559px) {

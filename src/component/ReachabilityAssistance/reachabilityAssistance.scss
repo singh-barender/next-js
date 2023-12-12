@@ -16,6 +16,10 @@ $color_2: red;
         margin: 0 auto;
         max-width: 484px;
     }
+    .all-btn{
+        text-transform: capitalize;
+        padding: 20px 111px;
+    }
 }
 .contact-rules {
     color: $color_1;
@@ -33,6 +37,14 @@ $color_2: red;
     .contact-map-form {
         .contact-form-width {
             margin-top: 140px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1559px) {
+    .contact-map-form{
+        .all-btn{
+            text-transform: capitalize;
+            padding: 13px 61px;
         }
     }
 }
@@ -91,8 +103,9 @@ $color_2: red;
                 padding-bottom: 50px;
             }
         }
-        .contact-form-width {
-            max-width: 400px;
+        .all-btn{
+            text-transform: capitalize;
+            padding: 14px 61px;
         }
     }
     .form-label-font {
@@ -125,6 +138,10 @@ $color_2: red;
         }
         .contact-form-width {
             max-width: 320px;
+        }
+        .all-btn{
+            text-transform: capitalize;
+            padding: 13px 54px;
         }
     }
     .center-image {

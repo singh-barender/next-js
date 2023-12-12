@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import logo from '@/images/Header_logo.png'
 import toggle_icon from '@/images/toggle-icon.png'
@@ -9,12 +9,14 @@ export const Header = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
 
-    const toggleSidebar = () => {
-        setSidebarOpen(!isSidebarOpen)
+    const toggleSidebar = (): void => {
+        setSidebarOpen(!isSidebarOpen);
+        document.body.classList.add('navbar-active');
     }
-
-    const closeSidebar = () => {
-        setSidebarOpen(false)
+    
+    const closeSidebar = (): void => {
+        setSidebarOpen(false);
+        document.body.classList.remove('navbar-active');
     }
 
     useEffect(() => {
@@ -29,6 +31,7 @@ export const Header = () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
+
 
     return (
         <>
@@ -113,7 +116,7 @@ export const Header = () => {
                                 type="button"
                                 className="all-btn sign-btn-toggle mt-0 sidebar-margin "
                             >
-                                Sign In | Sign Up 
+                                Sign In &nbsp; | &nbsp;&nbsp; Sign Up 
                             </button>
                         </div>
                     </div>

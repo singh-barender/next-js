@@ -21,6 +21,34 @@ $color_1: var(--color);
     img {
         width: 100%;
     }
+    .all-btn{
+        padding: 21px 72px !important;
+    }
+}
+/* career hub css */
+.career-hub-sec {
+    background: #3f88f5;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+    .all-btn{
+        padding: 21px 72px !important;
+    }
+}
+/* hiring zone  */
+.hiring-zone-sec {
+    background: var(--white-color);
+    svg {
+        width: auto;
+        height: auto;
+    }
+    .career-content {
+        p {
+            max-width: 720px;
+        }
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .colaboration-platform {
@@ -34,6 +62,14 @@ $color_1: var(--color);
                 font-size: 22px;
                 letter-spacing: -1.1px;
             }
+        }
+        .all-btn{
+            padding: 15px 51px !important;
+        }
+    }
+    .career-hub-sec {
+        .all-btn{
+            padding: 15px 52px !important;
         }
     }
 }
@@ -60,9 +96,21 @@ $color_1: var(--color);
             h1 {
                 font-size: 32px;
             }
+           
             p {
                 font-size: 18px;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .colaboration-platform {
+        .main-title {
+            h1 {
+                br {
+                    display: none !important;
+                }
             }
         }
     }
@@ -78,38 +126,12 @@ $color_1: var(--color);
         align-items: center;
         justify-content: center;
     }
-    .main-title {
-        h2 {
-            font-size: 30px;
-            letter-spacing: -1.5px;
-
-            &::after {
-                width: 150px;
-            }
-        }
-        h3 {
-            font-size: 14px;
-            letter-spacing: -0.7px;
-        }
-    }
-    .mrg-bottom {
-        margin-bottom: 70px;
-    }
     .mrn-top-100 {
         margin-top: 88px;
-    }
-    .padd-top-100 {
-        padding-top: 60px;
-    }
-    .padd-btm-100 {
-        padding-bottom: 60px;
     }
     .colaboration-platform {
         .main-title {
             h1 {
-                br {
-                    display: none;
-                }
                 font-size: 30px;
                 line-height: 1.4;
                 text-align: center;
@@ -127,42 +149,24 @@ $color_1: var(--color);
         .row {
             flex-direction: column-reverse;
         }
+        .all-btn{
+            padding: 13px 36px !important;
+        }
     }
     .category-2.content-center {
         flex-direction: column;
     }
-}
-/* career hub css */
-.career-hub-sec {
-    background: #3f88f5;
-
-    svg {
-        width: 100%;
-        height: auto;
+    .career-hub-sec {
+        .all-btn{
+            padding: 13px 52px !important;
+            margin-bottom: 80px;
+        }
     }
-}
-@media only screen and (max-width: 767px) {
     .career-hub-sec {
         .row {
             flex-direction: column-reverse;
         }
     }
-}
-
-/* hiring zone  */
-.hiring-zone-sec {
-    background: var(--white-color);
-    svg {
-        width: auto;
-        height: auto;
-    }
-    .career-content {
-        p {
-            max-width: 720px;
-        }
-    }
-}
-@media only screen and (max-width: 767px) {
     .hiring-zone-p {
         margin-bottom: 74px;
     }

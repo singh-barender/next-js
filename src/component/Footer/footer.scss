@@ -104,10 +104,10 @@ $color_3: #c1c6cf;
     margin-top: 50px;
     a {
         border-bottom: 1px solid #c1c6cf;
-        font-size: 21px;
+        font-size: 20px;
     }
     span {
-        font-size: 21px;
+        font-size: 20px;
     }
 }
 @media (min-width: 992px) and (max-width: 1559px) {
@@ -257,6 +257,7 @@ $color_3: #c1c6cf;
                 margin-right: 0;
                 padding-right: 0;
                 margin-bottom: 15px;
+                font-size: 15px;
             }
         }
     }
