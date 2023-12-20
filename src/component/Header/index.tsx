@@ -1,37 +1,40 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import logo from '@/images/Header_logo.png'
-import toggle_icon from '@/images/toggle-icon.png'
 import './header.scss'
+import { useRouter } from 'next/navigation'
 
-export const Header = () => {
-    const [isSidebarOpen, setSidebarOpen] = useState(false)
-    const [scrolled, setScrolled] = useState(false)
-
-    const toggleSidebar = (): void => {
-        setSidebarOpen(!isSidebarOpen);
-        document.body.classList.add('navbar-active');
-    }
-    
-    const closeSidebar = (): void => {
-        setSidebarOpen(false);
-        document.body.classList.remove('navbar-active');
-    }
-
+export const Header = ({
+    scrolled,
+    isSidebarOpen,
+    setScrolled,
+    closeSidebar,
+}: any) => {
+    const router = useRouter()
     useEffect(() => {
         const handleScroll = () => {
             const isScrolled = window.scrollY > 0
             setScrolled(isScrolled)
         }
 
+        const handleOutsideClick = (event: MouseEvent) => {
+            const target = event.target as HTMLElement
+            if (isSidebarOpen && !target.closest('.navbar-collapse')) {
+                // If the click is outside of the sidebar, close it
+                closeSidebar()
+            }
+        }
+
         window.addEventListener('scroll', handleScroll)
+        document.addEventListener('click', handleOutsideClick)
 
         return () => {
             window.removeEventListener('scroll', handleScroll)
+            document.removeEventListener('click', handleOutsideClick)
         }
-    }, [])
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isSidebarOpen])
 
     return (
         <>
@@ -41,7 +44,7 @@ export const Header = () => {
                 }`}
             >
                 <nav className="navbar navbar-expand-lg bg-white">
-                    <div className="container ">
+                    <div className="container logo-wrapper">
                         <Image
                             src={logo}
                             alt="nav logo"
@@ -51,20 +54,14 @@ export const Header = () => {
                             <button
                                 type="button"
                                 className="all-btn sign-btn mt-0 sidebar-margin d-none d-md-block d-lg-none"
+                                onClick={() =>
+                                    router.push(
+                                        'https://portal.dufther.com/login'
+                                    )
+                                }
                             >
                                 {' '}
-                                Sign In  &nbsp; | &nbsp; Sign Up
-                            </button>
-                            <button
-                                className="navbar-toggler border-0"
-                                type="button"
-                                onClick={toggleSidebar}
-                            >
-                                <Image
-                                    src={toggle_icon}
-                                    alt="toggle-icon"
-                                    className="navbar-toggler-img"
-                                />
+                                Sign In &nbsp; | &nbsp; Sign Up
                             </button>
                         </div>
                         <div
@@ -88,7 +85,7 @@ export const Header = () => {
                                     <a
                                         className="nav-link  px-4 fw-medium link-hover"
                                         aria-current="page"
-                                        href="#"
+                                        href="https://dufther.com/about-us"
                                     >
                                         About Us
                                     </a>
@@ -97,7 +94,7 @@ export const Header = () => {
                                     <a
                                         className="nav-link  px-4 fw-medium link-hover"
                                         aria-current="page"
-                                        href="#"
+                                        href="https://dufther.com/pricing"
                                     >
                                         Pricing
                                     </a>
@@ -106,7 +103,7 @@ export const Header = () => {
                                     <a
                                         className="nav-link  px-4 fw-medium link-hover"
                                         aria-current="page"
-                                        href="#"
+                                        href="https://portal.dufther.com/user-agreement/terms"
                                     >
                                         Policies
                                     </a>
@@ -115,8 +112,13 @@ export const Header = () => {
                             <button
                                 type="button"
                                 className="all-btn sign-btn-toggle mt-0 sidebar-margin "
+                                onClick={() =>
+                                    router.push(
+                                        'https://portal.dufther.com/login'
+                                    )
+                                }
                             >
-                                Sign In &nbsp; | &nbsp;&nbsp; Sign Up 
+                                Sign In &nbsp; | &nbsp;&nbsp; Sign Up
                             </button>
                         </div>
                     </div>

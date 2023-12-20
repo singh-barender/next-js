@@ -56,7 +56,9 @@ export const TalentBridge = () => {
 
             {/* Data Privacy */}
             <div>
-                <div className="data-privacy-sec padd-btm-100 padd-top-100">
+                <div
+                    className="data-privacy-sec padd-btm-100 padd-top-100"
+                >
                     <div className="container">
                         <div className="data-privacy-content d-flex align-items-center justify-content-center flex-column text-center">
                             <Image
@@ -104,7 +106,7 @@ export const TalentBridge = () => {
                     </div>
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                            <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 download-app-mob-img">
                                 <div className="main-title d-block d-md-none">
                                     <p className="text-start">
                                         Access Anytime, Anywhere!
@@ -153,7 +155,7 @@ export const TalentBridge = () => {
                                     </div>
                                     <div className="download-app-scan download-content-center d-flex align-items-center justify-content-between">
                                         <a
-                                            href="#"
+                                            href="https://play.google.com/store/apps/details?id=com.dufther"
                                             target="_blank"
                                             className="content-center"
                                         >

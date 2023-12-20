@@ -12,16 +12,6 @@ export const BecomeSolution = () => {
                         <div className="row align-items-center">
                             <div className="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
                                 <div className="career-content career-content-right">
-                                    <p>
-                                        By 2030, When most Countries around the
-                                        world will have middle aged or elderly
-                                        Workforces, India will still be young.
-                                    </p>
-                                    <p>
-                                        Be Part of a Services Sector-led
-                                        Transformation that can harness
-                                        Technology with Skilled Human Capital.
-                                    </p>
                                     <h4>
                                         As we brace for the{' '}
                                         <span className="ornage-color ft-20">
@@ -32,6 +22,11 @@ export const BecomeSolution = () => {
                                         worlds, acquiring the right skills makes
                                         firms more productive and competitive.
                                     </h4>
+                                    <p>
+                                        Be Part of a Services Sector-led
+                                        Transformation that can harness
+                                        Technology with Skilled Human Capital.
+                                    </p>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">

@@ -7,6 +7,7 @@ import india_map from '@/svg/contact_map_india_map.svg'
 import axios from 'axios'
 import { RecaptchaComponent } from '@/component/recaptcha'
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { ToastContainer, toast } from 'react-toastify'
 import './reachabilityAssistance.scss'
 
 interface FormValues {
@@ -20,17 +21,19 @@ interface FormValues {
 export const ReachabilityAssistance = () => {
     // =============** Formik form **=================
     const validationSchema = Yup.object().shape({
-        name: Yup.string().required('Name is required'),
+        name: Yup.string()
+            .max(50, 'Name not be more than 50 characters')
+            .required('Name is required'),
         email: Yup.string()
             .email('Invalid email address')
             .required('Email Address is required'),
-        mobileNumber: Yup.number()
-            .typeError("That doesn't look like a phone number")
-            .positive("A phone number can't start with a minus")
-            .integer("A phone number can't include a decimal point")
-            .min(10)
+        mobileNumber: Yup.string()
+            .min(10, 'Mobile number must be at least 10 characters')
+            .max(10, 'Mobile number must be at most 10 characters')
             .required('A phone number is required'),
-        message: Yup.string().required('Message is required'),
+        message: Yup.string()
+            .max(100, 'Message not be more than 100 characters')
+            .required('Message is required'),
     })
     const { executeRecaptcha } = useGoogleReCaptcha()
 
@@ -62,17 +65,22 @@ export const ReachabilityAssistance = () => {
                 process.env.NEXT_PUBLIC_API_DOMAIN + '/referContacts',
                 { ...values, recaptchaToken: token }
             )
-            console.log('API Response:', apiResponse.data)
+            toast(
+                'Thanks for your message! Our team will be in touch with you shortly.'
+            )
+            resetForm()
         } catch (error: any) {
-            console.error('Error submitting form:', error)
+             toast(
+                 'This contact has already been registered or referred before!'
+             )
         }
 
         setSubmitting(false)
-        resetForm()
     }
     return (
         <>
             <div>
+                <ToastContainer />
                 <div className="contact-map-form padd-btm-100 padd-top-100">
                     <div className="container">
                         <div className="row">
@@ -98,7 +106,7 @@ export const ReachabilityAssistance = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 contact-form">
                                 <div className="main-title align-items-start">
                                     <h2 className="main-border-none">
                                         Reachability{' '}
@@ -188,10 +196,11 @@ export const ReachabilityAssistance = () => {
                                                         Message
                                                     </label>
                                                     <Field
+                                                        as="textarea"
                                                         className="form-control"
                                                         id="message"
                                                         name="message"
-                                                        rows="5"
+                                                        rows="4"
                                                         required
                                                         values={values?.message}
                                                     ></Field>

@@ -1,7 +1,7 @@
 $color_1: var(--color);
 /* colaboration */
 .colaboration-platform {
-    background: var(--page-1-color);
+    background: #e5eef5;
     margin-top: 137px;
     .main-title {
         margin-bottom: 10px;
@@ -21,33 +21,41 @@ $color_1: var(--color);
     img {
         width: 100%;
     }
-    .all-btn{
+    .all-btn {
         padding: 21px 72px !important;
     }
 }
 /* career hub css */
 .career-hub-sec {
     background: #3f88f5;
-
-    svg {
-        width: 100%;
-        height: auto;
-    }
-    .all-btn{
+    .all-btn {
         padding: 21px 72px !important;
+        margin-top: 40px;
+    }
+    .main-title {
+        padding-bottom: 20px;
     }
 }
 /* hiring zone  */
 .hiring-zone-sec {
     background: var(--white-color);
-    svg {
-        width: auto;
-        height: auto;
-    }
     .career-content {
         p {
             max-width: 720px;
         }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .career-hub-sec {
+        .all-btn {
+            margin-top: 60px;
+        }
+        .main-title {
+            padding-bottom: 50px;
+        }
+    }
+    .hiring-zone-p {
+        margin-top: 30px;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -63,13 +71,18 @@ $color_1: var(--color);
                 letter-spacing: -1.1px;
             }
         }
-        .all-btn{
+        .all-btn {
+            margin-top: 20px;
             padding: 15px 51px !important;
         }
     }
     .career-hub-sec {
-        .all-btn{
+        .all-btn {
+            margin-top: 100px;
             padding: 15px 52px !important;
+        }
+        .main-title {
+            padding-bottom: 20px;
         }
     }
 }
@@ -96,16 +109,31 @@ $color_1: var(--color);
             h1 {
                 font-size: 32px;
             }
-           
+
             p {
                 font-size: 18px;
                 margin-bottom: 0;
             }
         }
+        .all-btn {
+            font-size: 14px;
+            padding: 12px 30px !important;
+        }
+    }
+    .career-hub-sec {
+        .all-btn {
+            margin-top: 0px;
+            font-size: 14px;
+            padding: 12px 30px !important;
+        }
+        .main-title {
+            padding-bottom: 20px;
+        }
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .colaboration-platform {
+        background: #eceff8;
         .main-title {
             h1 {
                 br {
@@ -130,6 +158,7 @@ $color_1: var(--color);
         margin-top: 88px;
     }
     .colaboration-platform {
+        background: #eceff8;
         .main-title {
             h1 {
                 font-size: 30px;
@@ -138,6 +167,10 @@ $color_1: var(--color);
                 max-width: 300px;
                 padding-bottom: 0;
                 margin-bottom: 10px;
+                letter-spacing: -1.5px;
+                br {
+                    display: none;
+                }
             }
             p {
                 text-align: center;
@@ -146,28 +179,60 @@ $color_1: var(--color);
             }
             align-items: center;
         }
+        img {
+            margin-top: 40px;
+            max-width: 350px;
+        }
         .row {
             flex-direction: column-reverse;
         }
-        .all-btn{
+        .all-btn {
+            margin-top: 65px;
             padding: 13px 36px !important;
+            margin-bottom: 50px;
         }
     }
     .category-2.content-center {
         flex-direction: column;
     }
     .career-hub-sec {
-        .all-btn{
+        .all-btn {
             padding: 13px 52px !important;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 260px;
         }
     }
     .career-hub-sec {
         .row {
             flex-direction: column-reverse;
         }
+        .career-content {
+            h2 {
+                span {
+                    letter-spacing: -1.15px;
+                }
+            }
+            p {
+                line-height: 1.6;
+            }
+        }
     }
-    .hiring-zone-p {
-        margin-bottom: 74px;
+    .hiring-zone-sec {
+        .hiring-zone-p {
+            margin-top: 20px;
+            margin-bottom: 74px;
+        }
+        img {
+            margin: 0 auto;
+            max-width: 300px;
+            text-align: center;
+        }
+        .career-desc {
+            p {
+                line-height: 1.6;
+            }
+        }
     }
 }

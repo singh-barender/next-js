@@ -4,6 +4,7 @@ $color_2: red;
 .contact-map-form {
     background: #f7f7fa;
     .main-title {
+        margin-bottom: 30px;
         h2 {
             font-size: 52px;
             padding-bottom: 0;
@@ -16,7 +17,7 @@ $color_2: red;
         margin: 0 auto;
         max-width: 484px;
     }
-    .all-btn{
+    .all-btn {
         text-transform: capitalize;
         padding: 20px 111px;
     }
@@ -31,20 +32,41 @@ $color_2: red;
 .error-message {
     color: $color_2;
     font-size: 13px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
+
 @media (min-width: 1200px) {
     .contact-map-form {
-        .contact-form-width {
-            margin-top: 140px;
+        .contact-form {
+            padding-left: 50px;
+            .contact-form-width {
+                margin-top: 70px;
+            }
         }
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1559px) {
-    .contact-map-form{
-        .all-btn{
+    .contact-map-form {
+        .all-btn {
             text-transform: capitalize;
             padding: 13px 61px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .contact-map-form {
+        .main-title {
+            p {
+                font-size: 17px;
+            }
+        }
+        .contact-form-width {
+            margin-top: 70px !important;
+            .contact-input {
+                input {
+                    padding: 5px 15px;
+                }
+            }
         }
     }
 }
@@ -53,11 +75,6 @@ $color_2: red;
         .main-title {
             h2 {
                 font-size: 38px;
-            }
-        }
-        .center-image {
-            img {
-                max-width: 396px;
             }
         }
         .contact-form-width {
@@ -73,7 +90,7 @@ $color_2: red;
         font-size: 12px;
     }
     .error-message {
-        margin-top: 3px;
+        margin-top: 10px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -103,7 +120,7 @@ $color_2: red;
                 padding-bottom: 50px;
             }
         }
-        .all-btn{
+        .all-btn {
             text-transform: capitalize;
             padding: 14px 61px;
         }
@@ -116,7 +133,7 @@ $color_2: red;
     }
     .error-message {
         font-size: 12px;
-        margin-top: 3px;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -127,6 +144,7 @@ $color_2: red;
         .main-title {
             justify-content: center;
             align-items: center !important;
+            margin-bottom: 35px;
             h2 {
                 text-align: center;
                 font-size: 30px;
@@ -134,12 +152,21 @@ $color_2: red;
             p {
                 text-align: center;
                 font-size: 15px;
+                max-width: 300px;
+            }
+        }
+        .contact-form {
+            .main-title {
+                margin-bottom: 35px;
             }
         }
         .contact-form-width {
             max-width: 320px;
+            input {
+                padding: 7px 15px;
+            }
         }
-        .all-btn{
+        .all-btn {
             text-transform: capitalize;
             padding: 13px 54px;
         }
@@ -152,9 +179,12 @@ $color_2: red;
     }
     .error-message {
         font-size: 12px;
-        margin-top: 3px;
+        margin-top: 10px;
     }
     .contact-rules {
-        font-size: 12px;
+        font-size: 11px;
+    }
+    .contact-input {
+        margin-bottom: 14px;
     }
 }

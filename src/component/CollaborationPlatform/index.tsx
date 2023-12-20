@@ -21,7 +21,10 @@ export const CollaborationPlatform = () => {
                                     priority={true}
                                 />
                                 <div className="content-center d-block d-md-none">
-                                    <a href="#" className="all-btn">
+                                    <a
+                                        href="https://portal.dufther.com/login"
+                                        className="all-btn"
+                                    >
                                         Get Started
                                     </a>
                                 </div>
@@ -41,7 +44,10 @@ export const CollaborationPlatform = () => {
                                         </div>
                                     </div>
                                     <div className="content-center d-none d-sm-none d-md-block d-lg-block">
-                                        <a href="#" className="all-btn">
+                                        <a
+                                            href="https://portal.dufther.com/login"
+                                            className="all-btn"
+                                        >
                                             Get Started
                                         </a>
                                     </div>
@@ -65,7 +71,7 @@ export const CollaborationPlatform = () => {
                                 <Image
                                     src={carrer_hub}
                                     alt="no image"
-                                    className=" img-fluid"
+                                    className=" img-fluid opacity-image"
                                 />
                             </div>
                             <div className="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
@@ -78,16 +84,22 @@ export const CollaborationPlatform = () => {
                                         <p className="white-color">
                                             Our commitment is to lead you
                                             towards a purposeful career, not
-                                            just any job. <br />
-                                            We endorse positions geared toward
-                                            honing industry-specific skills.
-                                            <br />
-                                            Ready to embark on this journey?
-                                            Discover our innovative approach.
+                                            just any job.
+                                            <div className="break-margin">
+                                                We endorse positions geared
+                                                toward honing industry-specific
+                                                skills.
+                                            </div>
+                                            <div className="break-margin">
+                                                Ready to embark on this journey?
+                                            </div>
                                         </p>
                                     </div>
                                     <div className="mx-auto mrg-bottom content-center">
-                                        <a href="#" className="all-btn">
+                                        <a
+                                            href="https://portal.dufther.com/login"
+                                            className="all-btn"
+                                        >
                                             Sign Up
                                         </a>
                                     </div>

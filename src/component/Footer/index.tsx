@@ -31,7 +31,10 @@ export const Footer = () => {
                                 </span>
                                 <ul className="d-flex align-items-center footer-ul">
                                     <li>
-                                        <a href="#" target="_blank">
+                                        <a
+                                            href="https://www.facebook.com/Dufther"
+                                            target="_blank"
+                                        >
                                             <Image
                                                 src={facebook_icon}
                                                 alt="no image"
@@ -45,7 +48,10 @@ export const Footer = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank">
+                                        <a
+                                            href="https://www.linkedin.com/company/dufther"
+                                            target="_blank"
+                                        >
                                             <Image
                                                 src={linkedin_icon}
                                                 alt="no image"
@@ -59,7 +65,10 @@ export const Footer = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank">
+                                        <a
+                                            href="https://www.youtube.com/channel/UCkMtaYSgsNNlD5V2gpF5wQg/?guided_help_flow=5"
+                                            target="_blank"
+                                        >
                                             <Image
                                                 src={youtube_icon}
                                                 alt="no image"
@@ -81,10 +90,14 @@ export const Footer = () => {
                             <div className="footer-first-link footer-link">
                                 <ul className="d-flex align-items-center flex-wrap">
                                     <li className="fotter-li">
-                                        <a href="#">About Us</a>
+                                        <a href="https://dufther.com/about-us">
+                                            About Us
+                                        </a>
                                     </li>
                                     <li className="fotter-li">
-                                        <a href="#">Pricing</a>
+                                        <a href="https://dufther.com/pricing">
+                                            Pricing
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -93,13 +106,25 @@ export const Footer = () => {
                             <div className="footer-second-link footer-link">
                                 <ul className="d-flex align-items-center justify-content-center flex-wrap">
                                     <li>
-                                        <a href="#">Company</a>
+                                        <a href="https://dufther.com/about-us">
+                                            Company
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Policies</a>
+                                        <a
+                                            href="https://portal.dufther.com/user-agreement/terms"
+                                            target="_blank"
+                                        >
+                                            Policies
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Partner Us</a>
+                                        <a
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSc85VXvUCjl68ZJH0wIZhqvo5AhotFmhtFjKfoGsGooIzvbFg/viewform?embedded=true"
+                                            target="_blank"
+                                        >
+                                            Partner Us
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -113,7 +138,10 @@ export const Footer = () => {
                                         </span>
                                         <ul className="d-flex align-items-center ">
                                             <li>
-                                                <a href="#" target="_blank">
+                                                <a
+                                                    href="https://www.facebook.com/Dufther"
+                                                    target="_blank"
+                                                >
                                                     <Image
                                                         src={facebook_icon}
                                                         alt="no image"
@@ -129,7 +157,10 @@ export const Footer = () => {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" target="_blank">
+                                                <a
+                                                    href="https://www.linkedin.com/company/dufther"
+                                                    target="_blank"
+                                                >
                                                     <Image
                                                         src={linkedin_icon}
                                                         alt="no image"
@@ -145,7 +176,10 @@ export const Footer = () => {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" target="_blank">
+                                                <a
+                                                    href="https://www.youtube.com/channel/UCkMtaYSgsNNlD5V2gpF5wQg/?guided_help_flow=5"
+                                                    target="_blank"
+                                                >
                                                     <Image
                                                         src={youtube_icon}
                                                         alt="no image"
@@ -188,7 +222,7 @@ export const Footer = () => {
                                 © 2023 Version 2.3
                             </span>
                             <a
-                                href="#"
+                                href="https://bluesparx.in/"
                                 className="footer-mb-3-third"
                                 target="_blank"
                             >

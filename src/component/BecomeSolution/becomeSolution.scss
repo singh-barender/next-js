@@ -3,13 +3,14 @@
     background: var(--white-color);
     .career-content {
         p {
-            margin-bottom: 30px;
+            margin-top: 30px;
             max-width: 815px;
         }
         h4 {
             font-size: 27px;
             line-height: 1.4;
             font-weight: 500;
+            max-width: 875px !important;
         }
         span {
             font-size: 30px;
@@ -58,15 +59,16 @@
 }
 @media (min-width: 1200px) {
     .become-solution-sec {
-        .career-content {
-            margin-top: 150px;
-        }
+        padding-top: 55px !important;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .become-solution-sec {
+        padding-top: 55px !important;
         .career-content {
-            margin-top: 90px;
+            p {
+                max-width: 600px !important;
+            }
             h4 {
                 font-size: 20px;
                 span {
@@ -75,7 +77,7 @@
             }
         }
         .become-solution-content {
-            padding: 34px 35px;
+            padding: 40px 35px;
             .become-solution-ind {
                 span {
                     font-size: 15px;
@@ -86,6 +88,16 @@
             }
             span {
                 font-size: 38px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .become-solution-sec {
+        padding-top: 55px !important;
+        .career-content {
+            p {
+                max-width: 900px;
             }
         }
     }
@@ -111,6 +123,7 @@
     }
     .become-solution-sec {
         .career-content {
+            margin-top: 90px !important;
             h4 {
                 font-size: 16px;
             }
@@ -141,34 +154,49 @@
 @media only screen and (max-width: 767px) {
     .become-solution-sec {
         .career-content {
+            p {
+                line-height: 28px;
+            }
             span {
                 font-size: 20px;
+                line-height: 28px;
             }
             h4 {
                 font-size: 17px;
-                line-height: 1.4;
+                line-height: 1.5;
+                max-width: 320px;
+                margin: 0 auto;
             }
         }
-    }
-    .become-solution-content {
-        h2 {
-            font-size: 28.452px;
+        .become-shape {
+            margin-left: -40px;
+            margin-top: 20px;
+            max-width: 220px;
         }
-        span {
-            font-size: 31px;
+        .become-solution-content {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: -90px;
+            padding: 44px 35px;
+            h2 {
+                font-size: 28.452px;
+            }
+            span {
+                font-size: 31px;
+            }
+            .become-solution-ind {
+                span {
+                    font-size: 13px;
+                }
+            }
         }
         .become-solution-ind {
-            span {
-                font-size: 13px;
+            img {
+                width: 20px;
+                height: 20px;
             }
+            padding: 9px 23px;
+            margin-bottom: 20px;
         }
-    }
-    .become-solution-ind {
-        img {
-            width: 20px;
-            height: 20px;
-        }
-        padding: 9px 23px;
-        margin-bottom: 20px;
     }
 }

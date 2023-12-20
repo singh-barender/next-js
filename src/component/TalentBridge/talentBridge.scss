@@ -1,38 +1,68 @@
 /* talent bridge */
 .talent-bridge-sec {
     background: var(--primary-color);
-    .main-title{
-        h3{
+    .main-title {
+        h3 {
             letter-spacing: 1.122px;
         }
     }
-    .career-desc{
-        p{
+    .career-desc {
+        p {
             max-width: 750px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .talent-bridge-sec {
+        .main-title {
+            margin-bottom: 70px;
+        }
+        .career-content.career-content-left {
+            margin-top: 50px;
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .talent-bridge-sec {
+        .career-content {
+            margin-top: 60px !important;
         }
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .talent-bridge-sec {
-        .main-title{
-            h3{
-                letter-spacing:-0.878px;
+        .main-title {
+            h3 {
+                letter-spacing: -0.878px;
             }
         }
     }
 }
 @media only screen and (max-width: 767px) {
     .talent-bridge-sec {
-        .main-title{
-            h3{
-                letter-spacing:0.122px;
+        .main-title {
+            h3 {
+                letter-spacing: 0.122px;
             }
         }
         .row {
             flex-direction: column-reverse;
         }
         .career-content {
-            margin-bottom: 100px;
+            margin-bottom: 40px;
+            span {
+                letter-spacing: -1.15px;
+            }
+        }
+        .career-desc {
+            p {
+                line-height: 1.6;
+            }
+        }
+        .content-center {
+            img {
+                max-width: 280px;
+            }
         }
     }
 }
@@ -58,7 +88,7 @@
         .data-privacy-content {
             .main-title {
                 p {
-                    font-size: 18px;
+                    font-size: 23px;
                 }
             }
         }
@@ -75,7 +105,7 @@
                     max-width: 350px;
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 23px;
                     margin-bottom: 20px;
                 }
             }
@@ -92,15 +122,24 @@
 }
 @media only screen and (max-width: 767px) {
     .data-privacy-sec {
-        padding-bottom: 0px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         .data-privacy-content {
             img {
                 max-width: 72px;
-                margin-bottom: 46px;
+                margin-bottom: 40px;
             }
             .main-title {
+                h2 {
+                    margin-bottom: 53px;
+                    padding-bottom: 0;
+                }
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
+                }
+                p:last-child {
+                    max-width: 300px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -117,6 +156,8 @@
     background: #e5eef5;
     position: relative;
     .career-content {
+        position: relative;
+        z-index: 1;
         h2 {
             font-weight: 800;
             font-size: 58px;
@@ -127,8 +168,11 @@
                 max-width: 100%;
             }
         }
-        .download-app-scan{
-            margin-right: 65px;
+    }
+    .download-app-mob-img {
+        .main-title {
+            position: relative;
+            z-index: 1;
         }
     }
 }
@@ -161,6 +205,27 @@
     }
     .download-app-scan {
         margin-right: 65px;
+    }
+    .download-app-sec {
+        .download-app-mob-img {
+            padding-left: 120px;
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .download-app-sec {
+        .career-content {
+            padding-left: 144px;
+            h2 {
+                font-size: 42px;
+                span {
+                    font-size: 42px;
+                }
+            }
+        }
+        // .download-app-mob-img {
+        //     padding: 0 20px;
+        // }
     }
 }
 @media (min-width: 992px) and (max-width: 1559px) {
@@ -222,15 +287,23 @@
 }
 @media only screen and (max-width: 767px) {
     .download-app-sec {
+        padding: 60px 20px;
         .download-app-svg {
-            top: 0;
+            top: -120px;
             bottom: 0;
             display: flex;
-            max-width: 300px;
+            max-width: 270px;
         }
         .main-title {
+            h2 {
+                line-height: 1.5;
+                padding-bottom: 0;
+                margin-bottom: 5px;
+            }
             p {
                 font-size: 15px;
+                margin-bottom: 0;
+                line-height: 1.6;
             }
             .career-desc {
                 font-size: 15px;
@@ -263,11 +336,12 @@
                     margin-top: 36px;
                 }
                 img {
-                    max-width: 121.846px;
+                    max-width: 150px;
                 }
                 .download-scan-img {
                     width: 160px;
                     height: 160px;
+                    max-width: 160px;
                 }
             }
         }

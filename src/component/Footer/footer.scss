@@ -10,8 +10,18 @@ $color_3: #c1c6cf;
 .footer-logo-social {
     margin-bottom: 60px;
 }
+.footer-first-link {
+    ul {
+        li {
+            a {
+                font-family: var(--font-family-header-bold) !important;
+            }
+        }
+    }
+}
 .footer-social-icon {
     span {
+        font-family: var(--font-family-header-bold);
         font-size: 22px;
         font-weight: 600;
         text-transform: capitalize;
@@ -74,6 +84,7 @@ $color_3: #c1c6cf;
     }
 }
 .footer-second-link.footer-link {
+    font-family: var(--font-family-footer-regular) !important;
     li {
         a {
             border-right: 1px solid var(--border-white-color);
@@ -87,16 +98,14 @@ $color_3: #c1c6cf;
     }
 }
 .footer-mail {
-    svg {
-        width: 22px;
-        height: 22px;
-    }
+    font-family: var(--font-family-footer-regular) !important;
     span {
         font-size: 20px;
         margin-left: 10px;
     }
 }
 .footer-copyright {
+    font-family: var(--font-family-footer-regular) !important;
     border-top: 1px solid rgba(229, 238, 245, 0.3);
     color: $color_3;
     padding-top: 25px;
@@ -141,6 +150,20 @@ $color_3: #c1c6cf;
         }
         a {
             font-size: 15px;
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .footer-social-icon {
+        span {
+            font-size: 15px;
+        }
+    }
+    .footer-link {
+        li {
+            a {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -256,7 +279,7 @@ $color_3: #c1c6cf;
                 border-right: none;
                 margin-right: 0;
                 padding-right: 0;
-                margin-bottom: 15px;
+                margin-bottom: 8px;
                 font-size: 15px;
             }
         }
@@ -271,14 +294,28 @@ $color_3: #c1c6cf;
         flex-direction: column;
         align-items: flex-start !important;
         margin-bottom: 30px;
+        ul {
+            li {
+                a {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
     }
     .footer-mail {
+        img {
+            max-width: 17px;
+        }
         span {
             font-size: 15px;
         }
     }
     .footer-copyright {
         margin-top: 30px;
+        img {
+            max-width: 156px;
+        }
         a,
         span {
             font-size: 15px;

@@ -5,7 +5,7 @@ import TalentBridge from '@/component/TalentBridge'
 import BecomeSolution from '@/component/BecomeSolution'
 import ReachabilityAssistance from '@/component/ReachabilityAssistance'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <CollaborationPlatform />
@@ -15,4 +15,5 @@ const page = () => {
         </>
     )
 }
-export default page
+
+export default Page
