@@ -30,14 +30,6 @@ export const BecomeSolution = () => {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
-                                <div className="become-shape">
-                                    <Image
-                                        src={become_shap}
-                                        alt="become-shape-img"
-                                        className="img-fluid"
-                                        priority={true}
-                                    />
-                                </div>
                                 <div className="become-solution-content d-flex flex-column justify-content-end">
                                     <div className="become-solution-ind-main d-flex align-items-center">
                                         <div className="become-solution-ind d-flex align-items-center justify-content-center">

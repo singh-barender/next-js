@@ -31,7 +31,6 @@
     box-shadow: 0px 10.963px 16.444px 0px rgba(0, 0, 0, 0.04);
     padding: 64px 35px;
     position: relative;
-    margin-top: -130px;
     .become-solution-ind {
         span {
             font-size: 21px;
@@ -59,12 +58,12 @@
 }
 @media (min-width: 1200px) {
     .become-solution-sec {
-        padding-top: 55px !important;
+        padding: 40px 0 !important;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .become-solution-sec {
-        padding-top: 55px !important;
+        padding: 40px 0 !important;
         .career-content {
             p {
                 max-width: 600px !important;
@@ -94,7 +93,7 @@
 }
 @media only screen and (min-width: 1200px) {
     .become-solution-sec {
-        padding-top: 55px !important;
+        padding: 100px 0 !important;
         .career-content {
             p {
                 max-width: 900px;
@@ -123,7 +122,6 @@
     }
     .become-solution-sec {
         .career-content {
-            margin-top: 90px !important;
             h4 {
                 font-size: 16px;
             }
@@ -133,7 +131,6 @@
         }
     }
     .become-solution-content {
-        margin-top: -50px;
         .become-solution-ind {
             img {
                 width: 16px;
@@ -176,7 +173,7 @@
         .become-solution-content {
             max-width: 300px;
             margin: 0 auto;
-            margin-top: -90px;
+            margin-top: 45px;
             padding: 44px 35px;
             h2 {
                 font-size: 28.452px;
